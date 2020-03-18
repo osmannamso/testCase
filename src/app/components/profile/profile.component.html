@@ -1,0 +1,21 @@
+<div class="container m-t-30">
+    <app-user-profile-item *ngIf="!!user" [user]="user"></app-user-profile-item>
+    <div class="inner-container-right">
+      <h3>Витрина объектов</h3>
+      <div class="row apartments wrap">
+        <app-apartment-item class="col" *ngFor="let apartment of apartments" [apartment]="apartment"></app-apartment-item>
+      </div>
+      <button class="btn btn-main show-more">Показать еще</button>
+      <h3>Отзывы</h3>
+      <div class="main-recommendation row">
+        <p class="text-bold col just-text-recommendation">Рекомендуют</p>
+        <p class="text-recommendation col">
+          <b>{{ user.recommendationCommentRate }}%</b>
+          пользователей
+          <span class="text-comment-info">({{ user.commentCount }} отзывов)</span>
+        </p>
+      </div>
+      <div class="main-divider"></div>
+      <app-user-comment-item *ngFor="let comment of comments" [comment]="comment"></app-user-comment-item>
+    </div>
+</div>

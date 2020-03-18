@@ -1,0 +1,17 @@
+<div class="row main-wrapper">
+  <div class="col img-col text-center">
+    <img class="" alt="" [src]="comment.user.avatar || defaultAvatar" />
+  </div>
+  <div class="col">
+    <div class="comment-info row j-space-between">
+      <p class="comment-user-info">{{ comment.user.username }} <span class="comment-date">{{ comment.date }}</span></p>
+      <p class="recommendation-status" [class.is-recommendation]="comment.isRecommendation">{{ comment.isRecommendation ? 'Рекомендую' : 'Не рекомендую' }}</p>
+    </div>
+    <div class="comment-content" [innerHTML]="comment.content"></div>
+    <p>
+      <i class="icon i-house"></i>
+      Private Pool House with Amazing views
+    </p>
+  </div>
+</div>
+<div class="main-divider"></div>

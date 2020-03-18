@@ -1,0 +1,20 @@
+{
+  "username": "BillBrat",
+  "avatar": "/assets/images/avatar.jpg",
+  "description": "Hi there. Welcome to my home. I enjoy meeting people from all over the world and I enjoy showing others why I love living in Central London. All the museums and art galleries are just a walk or ride away from me and Camden Lock is 8",
+  "city": {
+    "name": "Алматы",
+    "country": "Казахстан"
+  },
+  "isOnline": true,
+  "languages": [
+    "Казахский",
+    "Русский",
+    "Английский"
+  ],
+  "isOfficial": true,
+  "averageReportTime": "30 мин",
+  "recommendationRate": 80,
+  "recommendationCommentRate": 65,
+  "commentCount": 15
+}

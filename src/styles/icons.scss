@@ -1,0 +1,78 @@
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &.i-house {
+    width: 14px;
+    height: 12px;
+    background-image: url("assets/icons/house.svg");
+  }
+
+  &.i-star {
+    width: 11px;
+    height: 10px;
+    background-image: url("assets/icons/star.svg");
+
+    &.unstar {
+      background-image: url("assets/icons/unstar.svg");
+    }
+  }
+
+  &.i-arrow {
+    &-left {
+      background-image: url("assets/icons/left.svg");
+    }
+    &-right {
+      background-image: url("assets/icons/right.svg");
+    }
+  }
+
+  &.i-email {
+    width: 16px;
+    height: 7px;
+    background-image: url("assets/icons/email.svg");
+  }
+
+  &.i-crown {
+    width: 16px;
+    height: 16px;
+    background-image: url("assets/icons/crown.svg");
+  }
+
+  &.i-official {
+    width: 16px;
+    height: 16px;
+    background-image: url("assets/icons/official.svg");
+  }
+
+  &.i-blue-stark {
+    width: 28px;
+    height: 48px;
+    background-image: url("assets/icons/blue-stark.png")
+  }
+
+  &.i-green-stark {
+    width: 28px;
+    height: 48px;
+    background-image: url("assets/icons/green-stark.png");
+  }
+
+  &.i-door {
+    width: 10px;
+    height: 16px;
+    background-image: url("assets/icons/door.svg");
+  }
+
+  &.i-people {
+    width: 16px;
+    height: 16px;
+    background-image: url("assets/icons/people.svg");
+  }
+
+  &.i-save {
+    width: 18px;
+    height: 24px;
+    background-image: url("assets/icons/save.svg");
+  }
+}

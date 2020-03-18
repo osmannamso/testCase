@@ -1,0 +1,35 @@
+<div class="row j-space-between a-flex-start main-wrapper">
+  <div class="user-wrapper col">
+    <div class="user-main-info-wrapper text-center">
+      <img [src]="user.avatar" alt="">
+      <p class="text-bold">
+        {{ user.username }}
+        <i *ngIf="user.isOfficial" class="icon i-official"></i>
+      </p>
+    </div>
+    <div class="main-divider"></div>
+    <p><i class="icon i-crown"></i> Рекомендуют <b>{{ user.recommendationRate }}%</b> гостей</p>
+    <div class="main-divider"></div>
+    <p><i class="icon i-email"></i> Среднее время ответа - <span class="green-text">{{ user.averageReportTime }}</span></p>
+    <div class="main-divider"></div>
+    <button class="btn btn-main">Редактировать</button>
+  </div>
+  <div class="user-info-wrapper col">
+    <div class="row j-space-between">
+      <p class="text-bold">
+        {{ user.username }}
+        <i *ngIf="user.isOfficial" class="icon i-official"></i>
+      </p>
+      <p class="status-online">онлайн</p>
+    </div>
+    <div class="main-divider"></div>
+    <p class="text-bold">Обо мне</p>
+    <p class="description" [innerHTML]="user.description"></p>
+    <div class="main-divider"></div>
+    <p class="text-bold">Город</p>
+    <p>{{ user.city.name }} {{ user.city.country }}</p>
+    <div class="main-divider"></div>
+    <p class="text-bold">Вледение языками</p>
+    <p>{{ user.languages.join(', ') }}</p>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+[
+  {
+    "name": "Квартира-студия с гостиничным сервисом",
+    "price": "12000",
+    "roomCount": 4,
+    "address": "Сейфуллина 458, Айтек би Алмалинский район",
+    "averageRating": 4,
+    "ratingCount": 85,
+    "guestLimit": 4,
+    "images": [
+      "assets/images/apartment.jpg",
+      "https://api.goodplaces.kz/media/photos/%2B77026520640/9drpu6onvq0rbuiv0teq374hy.JPEG",
+      "https://api.goodplaces.kz/media/photos/%2B77072953208/pltxbwjgglzct81ko2srzwlpt.JPEG"
+    ],
+    "isFreeCancel": true,
+    "isOk": true,
+    "isMedal": true
+  },
+  {
+    "name": "Квартира-студия с гостиничным сервисом",
+    "price": "12000",
+    "roomCount": 4,
+    "address": "Сейфуллина 458, Айтек би Алмалинский район",
+    "averageRating": 4,
+    "ratingCount": 85,
+    "guestLimit": 4,
+    "images": [
+      "assets/images/apartment.jpg",
+      "https://api.goodplaces.kz/media/photos/%2B77026520640/9drpu6onvq0rbuiv0teq374hy.JPEG",
+      "https://api.goodplaces.kz/media/photos/%2B77072953208/pltxbwjgglzct81ko2srzwlpt.JPEG"
+    ],
+    "isFreeCancel": true,
+    "isOk": true,
+    "isMedal": false
+  }
+]

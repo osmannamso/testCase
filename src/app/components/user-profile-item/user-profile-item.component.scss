@@ -1,0 +1,55 @@
+@import "../../../styles/theming";
+
+.user-wrapper {
+  max-width: 264px;
+}
+
+.user-info-wrapper {
+  max-width: 558px;
+}
+
+.user-main-info-wrapper {
+  padding-top: 12px;
+  border: 1px solid map-get($plz-foreground, divider);
+  border-radius: 6px;
+
+  img {
+    border-radius: 4px;
+  }
+}
+
+.green-text {
+  color: $plz-green;
+}
+
+.user-info-wrapper {
+  padding: 20px 30px 30px;
+  background: $plz-white;
+  border: 1px solid map-get($plz-foreground, divider);
+  box-sizing: border-box;
+  border-radius: 6px;
+
+  .description {
+    font-size: 16px;
+    line-height: 31px;
+  }
+}
+
+.status-online {
+  color: map-get($plz-foreground, thin);
+}
+
+@media (max-width: 599px) {
+  .main-wrapper {
+    flex-direction: column;
+  }
+
+  .user-wrapper {
+    margin: auto;
+  }
+
+  .user-info-wrapper {
+    margin: 20px 15px 20px;
+    max-width: 100%;
+  }
+}

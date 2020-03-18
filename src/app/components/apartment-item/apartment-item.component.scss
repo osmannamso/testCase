@@ -1,0 +1,119 @@
+@import "../../../styles/theming";
+
+.slider-wrapper {
+  position: relative;
+  width: 262px;
+  height: 198px;
+
+  .arrow {
+    width: 9px;
+    height: 16px;
+    padding: 0;
+    position: absolute;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+
+    &.i-arrow-left {
+      left: 5px;
+      top: 90px;
+    }
+
+    &.i-arrow-right {
+      right: 5px;
+      top: 90px;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 198px;
+    object-fit: cover;
+    border-radius: 6px 6px 0 0;
+  }
+}
+
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.main-divider {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.apartment-content {
+  padding: 10px 16px 14px;
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+}
+
+.apartment-address {
+  font-size: 15px;
+}
+
+.apartment-bottom {
+  font-size: 12px;
+
+  span {
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 5px;
+    color: map-get($plz-foreground, primary);
+  }
+
+  .free-cancel {
+    font-size: 12px;
+    color: map-get($plz-foreground, support);
+  }
+}
+
+.star-wrapper {
+  .i-star {
+    margin-left: 5px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.apartment-name {
+  color: map-get($plz-foreground, primary);
+}
+
+.price-tag {
+  position: absolute;
+  width: 130px;
+  height: 25px;
+  left: 10px;
+  bottom: 10px;
+  padding-top: 5px;
+  text-align: center;
+  border-radius: 27px;
+  background-color: $plz-white;
+  color: map-get($plz-foreground, support);
+
+  .price-number {
+    color: $plz-black;
+  }
+}
+
+.i-save {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+}
+
+.i-blue-stark {
+  position: absolute;
+  top: -10px;
+  right: 55px;
+}
+
+.i-green-stark {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+}

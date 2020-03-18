@@ -1,0 +1,30 @@
+<div class="slider-wrapper">
+  <img [src]="apartment.images[selectedImg]" alt="">
+  <button class="icon i-arrow-left arrow" (click)="prevSlide()"></button>
+  <button class="icon i-arrow-right arrow" (click)="nextSlide()"></button>
+  <div class="price-tag">
+    <span class="price-number">{{ apartment.price }}</span>
+    т/за сутки
+  </div>
+  <i class="icon i-save"></i>
+  <i *ngIf="apartment.isMedal" class="icon i-blue-stark"></i>
+  <i *ngIf="apartment.isOk" class="icon i-green-stark"></i>
+</div>
+<div class="apartment-content">
+  <p class="apartment-name">{{ apartment.name }}</p>
+  <div class="row j-space-between">
+    <p><i class="icon i-door"></i> {{ apartment.roomCount }} комнаты</p>
+    <p><i class="icon i-people"></i> до {{ apartment.guestLimit }} гостей</p>
+  </div>
+  <p class="w-nowrap text-ellipsis apartment-address">{{ apartment.address }}</p>
+  <div class="main-divider"></div>
+  <div class="row j-space-between apartment-bottom">
+    <div class="star-wrapper">
+      <i class="icon i-star" *ngFor="let part of apartment.ratingParts" [class.unstar]="part === -1"></i>
+      <span>{{ apartment.ratingCount }}</span>
+    </div>
+    <div class="free-cancel" *ngIf="apartment.isFreeCancel">
+      Бесплатная отмена
+    </div>
+  </div>
+</div>
